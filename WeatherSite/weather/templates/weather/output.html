@@ -1,0 +1,13 @@
+<title>WeatherApp</title>
+<center>
+{% if json_data %}
+<h2>API Data:</h2>
+
+
+    {% for item in json_data %}
+        {{ item }}
+    {% endfor %}
+
+{% endif %}
+<h3>Note: Output can also be seen on terminal</h3>
+</center>
